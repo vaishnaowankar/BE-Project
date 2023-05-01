@@ -93,15 +93,15 @@ def main():
     
     import matplotlib.pyplot as plt
     # summarize history for accuracy
-#     plt.plot(model.history['accuracy'])
-#     plt.plot(model.history['val_accuracy'])
-#     plt.title('model accuracy')
-#     plt.ylabel('accuracy')
-#     plt.xlabel('epoch')
-#     plt.legend(['train', 'test'], loc='upper left')
-#     plt.savefig(basepath + "/accuracy.png",bbox_inches='tight')
+    plt.plot(model.history['accuracy'])
+    plt.plot(model.history['val_accuracy'])
+    plt.title('model accuracy')
+    plt.ylabel('accuracy')
+    plt.xlabel('epoch')
+    plt.legend(['train', 'test'], loc='upper left')
+    plt.savefig(basepath + "/accuracy.png",bbox_inches='tight')
 
-#     plt.show()
+    plt.show()
     # summarize history for loss
     
     plt.plot(model.history['loss'])
